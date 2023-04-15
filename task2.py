@@ -1,7 +1,6 @@
-n = int(input("Enter an integer: "))
+year = int(input("Enter a year: "))
 
-
-result = n + (n*10 + n) + (n*100 + n*10 + n)
-
-
-print("The value of n+nn+nnn is:", result)
+if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+    print(year, "is a leap year")
+else:
+    print(year, "is not a leap year")
